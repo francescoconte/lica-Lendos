@@ -1,0 +1,784 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-rendering: optimizeLegibility;
+}
+html {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+}
+body {
+  background: #f7f7f7;
+  color: #121010;
+  font-family: 'MuseoSansRegular', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  font-weight: 300;
+}
+select {
+  /* Partial list of available values in Gecko */
+  -moz-appearance: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.m-n {
+  margin: 0;
+}
+.img-origin {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.bgTC {
+  background-position: top CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+}
+.bgCC {
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+}
+.bgCCC {
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+}
+.bgCLC {
+  background-position: LEFT CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+}
+.bgCRC {
+  background-position: RIGHT CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+}
+.pov1 {
+  -moz-transform: rotate(45deg);
+  /* Для Firefox */
+  -ms-transform: rotate(45deg);
+  /* Для IE */
+  -webkit-transform: rotate(45deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(45deg);
+  /* Для Opera */
+  transform: rotate(45deg);
+}
+.pov2 {
+  -moz-transform: rotate(-90deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-90deg);
+  /* Для IE */
+  -webkit-transform: rotate(-90deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-90deg);
+  /* Для Opera */
+  transform: rotate(-90deg);
+}
+.pov3 {
+  -moz-transform: rotate(-42deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-42deg);
+  /* Для IE */
+  -webkit-transform: rotate(-42deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(-42deg);
+  /* Для Opera */
+  transform: rotate(-42deg);
+}
+.pov4 {
+  -moz-transform: rotate(-132deg);
+  /* Для Firefox */
+  -ms-transform: rotate(132deg);
+  /* Для IE */
+  -webkit-transform: rotate(132deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(132deg);
+  /* Для Opera */
+  transform: rotate(132deg);
+}
+.pov5 {
+  -moz-transform: rotate(180deg);
+  /* Для Firefox */
+  -ms-transform: rotate(180deg);
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(180deg);
+  /* Для Opera */
+  transform: rotate(180deg);
+}
+.m-speed {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.med-speed {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.mod-speed {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.speed-max {
+  -webkit-transition: all 1.5s;
+  -moz-transition: all 1.5s;
+  -o-transition: all 1.5s;
+  transition: all 1.5s;
+}
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* wow */
+::-moz-selection {
+  color: #fff;
+  background: #000;
+}
+::selection {
+  color: #fff;
+  background: #000;
+}
+/* forms */
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+select:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+div:focus {
+  outline: none;
+}
+h1 {
+  font-family: 'MuseoSansBlack', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 40px;
+}
+h2 {
+  font-family: 'MuseoSansBlack', sans-serif;
+  font-weight: 300;
+  color: #525252;
+  font-size: 30px;
+}
+h3 {
+  font-family: 'MuseoSansRegular', sans-serif;
+  font-weight: 300;
+  color: #121010;
+  font-size: 24px;
+}
+h3.bold {
+  font-family: 'MuseoSansBold', sans-serif;
+  font-weight: 300;
+  color: #121010;
+  font-size: 24px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #121010;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-family: 'MuseoSansBold', sans-serif;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a.phone {
+  text-align: right;
+  font-weight: 500;
+  display: block;
+  font-size: 16px;
+  float: right;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-left: 30px;
+  position: relative;
+}
+a.phone b {
+  font-family: 'MuseoSansBold', sans-serif;
+}
+.phone::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  background: url(../img/phone.png);
+  position: absolute;
+  top: 1px;
+  left: -30px;
+}
+.content {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+section {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.wrap {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 100%;
+  min-height: 550px;
+}
+.button {
+  padding: 22px 42px;
+  color: #fff;
+  font-family: 'MuseoSansBlack';
+  font-size: 14px;
+  text-align: center;
+  background: #d51d6d;
+  border-radius: 45px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  letter-spacing: 1px;
+}
+.button:hover {
+  background: #c61d66;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  z-index: 999999999999;
+  box-shadow: 0px 14px 24px 0px rgba(36, 36, 36, 0.45);
+}
+header .content {
+  height: 100%;
+}
+header .header--logo--block {
+  float: left;
+  height: 100%;
+  width: 25%;
+  display: inline-table;
+}
+header .header--logo--block a.logo {
+  display: block;
+  width: 150px;
+  height: 60px;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  background: url(../img/logo.png);
+}
+header .header--nav--block {
+  float: left;
+  height: 100%;
+  width: 50%;
+  display: inline-table;
+}
+header .header--nav--block nav {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: center;
+}
+header .header--nav--block nav a {
+  color: #777777;
+  font-size: 14px;
+  font-family: 'MuseoSansLightr', sans-serif;
+  margin: 0 11px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+header .header--nav--block nav a:hover {
+  color: #d51d6d;
+}
+header .header--phone--block {
+  float: left;
+  height: 100%;
+  width: 25%;
+  display: inline-table;
+  text-align: right;
+}
+header .header--phone--block a.phone {
+  text-align: right;
+  font-weight: 500;
+  display: block;
+  font-size: 16px;
+  float: right;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-left: 30px;
+  position: relative;
+}
+header .header--phone--block a.phone b {
+  font-family: 'MuseoSansBold', sans-serif;
+}
+header .header--phone--block .phone::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: contain!important;
+  background: url(../img/phone.png);
+  position: absolute;
+  top: 1px;
+  left: -30px;
+}
+header .header--phone--block a:hover {
+  color: #d51d6d;
+}
+.home {
+  position: absolute;
+  display: table;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+  background: url(../img/home.jpg);
+  text-align: center;
+}
+.home h1 {
+  font-size: 66px;
+  color: #fff;
+  font-family: 'MuseoSansBold', sans-serif;
+  text-align: center;
+  font-family: 'MuseoSansBlack';
+  padding: 75px;
+}
+.about {
+  padding: 95px;
+  height: 1085px;
+}
+.about .about--info--block {
+  float: left;
+  width: 100%;
+}
+.about .about--info--block .about--info-one {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+  display: inline-table;
+  height: 443px;
+}
+.about .about--info--block .about--info-one article {
+  float: left;
+  width: 100%;
+  padding: 34px;
+}
+.about .about--info--block .about--info-one h2 {
+  font-size: 44px;
+  color: #121010;
+  font-family: 'MuseoSansBold', sans-serif;
+  margin-bottom: 35px;
+}
+.about .about--info--block .about--info-one p {
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'MuseoSansLightr', sans-serif;
+  color: #777777;
+  line-height: 1.7;
+}
+.about .about--table--ico--block {
+  float: left;
+  width: 100%;
+  margin-top: 85px;
+}
+.about .about--table--ico--block .about--ico--one {
+  height: 270px;
+  width: 20%;
+  border-left: solid 6px #f7f7f7;
+  border-right: solid 6px #f7f7f7;
+  position: relative;
+  float: left;
+}
+.about .about--table--ico--block .about--ico--one .one--block {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: #fff;
+  padding: 30px 15px;
+}
+.about .about--table--ico--block .about--ico--one .one--block .ico {
+  height: 125px;
+  float: left;
+  width: 100%;
+  display: table;
+}
+.about .about--table--ico--block .about--ico--one .one--block .ico img {
+  position: relative;
+  display: table-cell;
+  vertical-align: bottom;
+  margin: 0 auto;
+  padding: 24px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.about .about--table--ico--block .about--ico--one .one--block .title {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-family: 'MuseoSansBold', sans-serif;
+  margin-bottom: 10px;
+}
+.about .about--table--ico--block .about--ico--one .one--block p {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'MuseoSansLightr', sans-serif;
+  color: #777777;
+  line-height: 1.5;
+  text-align: center;
+}
+.about .about--table--ico--block .about--ico--one:hover {
+  cursor: pointer;
+}
+.about .about--table--ico--block .about--ico--one:hover .one--block .ico img {
+  margin-top: -10px;
+}
+.slider-one {
+  height: 895px;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+  background: url(../img/bgpre.jpg);
+}
+.slider-one .content {
+  height: 100%;
+  display: table;
+}
+.slider-one h2 {
+  font-size: 44px;
+  color: #fff;
+  font-family: 'MuseoSansBold', sans-serif;
+  text-align: center;
+}
+.slider-one .slider--block {
+  float: left;
+  width: 100%;
+  margin-top: 115px;
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+.slider-one .slider--block .slide--one {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.slider-one .slider--block .slide--one .one {
+  width: 32.9999999%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+.slider-one .slider--block .slide--one .one .one--block--pre {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+}
+.slider-one .slider--block .slide--one .one .one--block--pre .image {
+  float: left;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+.slider-one .slider--block .slide--one .one .one--block--pre .image img {
+  position: relative;
+  display: block;
+}
+.slider-one .slider--block .slide--one .one .one--block--pre span {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'MuseoSansLightr', sans-serif;
+  display: block;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+.slider-one .slider--block .stick {
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 22px;
+  height: 35px;
+  margin-top: -18px;
+  background: url(../img/stick.png);
+}
+.slider-one .slider--block .stick:hover {
+  opacity: .75;
+  cursor: pointer;
+}
+.slider-one .slider--block #s-left {
+  left: 0px;
+}
+.slider-one .slider--block #s-right {
+  right: 0px;
+  -moz-transform: rotate(180deg);
+  /* Для Firefox */
+  -ms-transform: rotate(180deg);
+  /* Для IE */
+  -webkit-transform: rotate(180deg);
+  /* Для Safari, Chrome, iOS */
+  -o-transform: rotate(180deg);
+  /* Для Opera */
+  transform: rotate(180deg);
+}
+.slider-one p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: 'MuseoSansLightr', sans-serif;
+  display: block;
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 90px;
+}
+.slider-one p .button {
+  margin-top: 43px;
+  display: inline-block;
+}
+.contatc {
+  padding: 95px;
+  height: 755px;
+  padding-top: 160px;
+}
+.contatc .about--info--block {
+  float: left;
+  width: 100%;
+}
+.contatc .about--info--block .about--info-one {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background-position: CENTER CENTER !important;
+  background-repeat: no-repeat !important;
+  background-size: COVER !important;
+  display: inline-table;
+  height: 443px;
+}
+.contatc .about--info--block .about--info-one article {
+  float: left;
+  width: 100%;
+  padding: 65px;
+}
+.contatc .about--info--block .about--info-one h2 {
+  font-size: 44px;
+  color: #121010;
+  font-family: 'MuseoSansBold', sans-serif;
+  margin-bottom: 35px;
+}
+.contatc .about--info--block .about--info-one p {
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  font-family: 'MuseoSansLightr', sans-serif;
+  color: #777777;
+  line-height: 1.7;
+  text-align: left;
+}
+.contatc .about--info--block .about--info-one .button {
+  margin-top: 43px;
+  display: inline-block;
+  float: left;
+}
+.contatc .about--info--block .about--info-one .phone {
+  float: left;
+  margin-top: 25px;
+}
+.contatc .about--info--block .about--info-one .phone::before {
+  top: 5px;
+}

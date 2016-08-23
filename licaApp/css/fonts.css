@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'MuseoSansBlack';
+    src: url('../fonts/MuseoSansBlack.eot');
+    src: url('../fonts/MuseoSansBlack.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSansBlack.woff') format('woff'),
+         url('../fonts/MuseoSansBlack.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* font-family: "ProximaNovaRegular"; */
+@font-face {
+    font-family: "MuseoSansLight";
+    src: url("../fonts/MuseoSansLight.eot");
+    src: url("../fonts/MuseoSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoSansLight.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaBold"; */
+@font-face {
+    font-family: "MuseoSansBold";
+    src: url("../fonts/MuseoSansBold.eot");
+    src: url("../fonts/MuseoSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoSansBold.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaBlack"; */
+@font-face {
+    font-family: "MuseoSansRegular";
+    src: url("../fonts/MuseoSansRegular.eot");
+    src: url("../fonts/MuseoSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MuseoSansRegular.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
