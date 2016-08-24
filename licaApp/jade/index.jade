@@ -11,20 +11,20 @@ html
                         a.logo
                 .header--nav--block
                     nav
-                        a(href="#") О проекте              
-                        a(href="#") Преимущества
-                        a(href="#") Планировки
-                        a(href="#") Галерея
+                        a(href="#about") О проекте              
+                        a(href="#prem") Преимущества
+                        a(href="#plan") Планировки
+                        a(href="#gallery") Галерея
                         a(href="#") Оставить заявку
                 .header--phone--block
                     .middle
                         a.phone <i></i> +7 (495) <b>407-78-09</b>
-        .home
+        .home.fullscreen.background.parallax
             .middle
                 h1 Сдача 2-го корпуса<br> уже летом!
                 a.button oставить заявку
     .wrap
-        section.about
+        section.about#about
             .content
                 .about--info--block
                     .about--info-one
@@ -47,55 +47,70 @@ html
                         .one--block
                             .ico <img src="img/ico2.png">
                             .title Вас узнают
-                            p В 15-ти минутах от центра, вблизи основных транспортных магистралей
+                            p Интеллектуальная система распознавания въезжающих автомобилей
                     // one block ico                
                     // one block ico
                     .about--ico--one
                         .one--block
                             .ico <img src="img/ico3.png">
                             .title Удаленное управление
-                            p В 15-ти минутах от центра, вблизи основных транспортных магистралей
+                            p Удаленный доступ к сервисам и информации с первых минут
                     // one block ico                
                     // one block ico
                     .about--ico--one
                         .one--block
                             .ico <img src="img/ico4.png">
                             .title Ключи больше не нужны
-                            p В 15-ти минутах от центра, вблизи основных транспортных магистралей
+                            p Единое лобби с интеллектуальной системой распознавания
                     // one block ico                
                     // one block ico
                     .about--ico--one
                         .one--block
                             .ico <img src="img/ico5.png">
                             .title Умный лифт
-                            p В 15-ти минутах от центра, вблизи основных транспортных магистралей
+                            p Определение этажа, прогноз погоды и акций – только начало пути
                     // one block ico
-        section.slider-one
+        section.slider-one.fullscreen.background.parallax#prem
             .content
                 .middle
                     h2 Преимущества
                     .slider--block
-                        .slide--one
+                        .slide--one#slide1
                         
                             .one
                                 .one--block--pre
                                     .image <img src="img/elips1.png">
                                     span Фитнес-клуб
                             .one
-                                .one--block--pre
+                                .one--block--pre.liner
                                     .image <img src="img/elips2.png">
                                     span Спортивные площадки
                             .one
                                 .one--block--pre
                                     .image <img src="img/elips3.png">
                                     span Открытый WI-FI кинотеатр
+                        .slide--one#slide2
+                            .one
+                                .one--block--pre
+                                    .image <img src="img/elips4.png">
+                                    span Внутридомовая<br> сеть WI-FI                                  
+                            .one
+                                .one--block--pre.liner
+                                    .image <img src="img/elips5.png">
+                                    span IZBA             
+                            .one
+                                .one--block--pre
+                                    .image <img src="img/elips6.png">
+                                    span Room Service                           
+
+                        
                         i.stick#s-left
                         i.stick#s-right
                     p Для отдыха и прогулок на территории комплекса спроектирована закрытая<br> благоустроенная территория с зелеными насаждениями, детскими и спортивными<br> площадками и другими зонами отдыха.<br> <a href="#" class="button">oставить заявку</a>
-        section.plan--slider
-            .content
-        section.image--slider
-            .content
+        section.plan--slider#plan
+            include include/slick2.jade
+        section.image--slider#gallery
+            include include/slick.jade
         
         section.contatc
             .content
@@ -107,3 +122,22 @@ html
                                 h2 Контакты
                                 p Пресненская наб., д. 8 стр. 1 ММДЦ «Москва-Сити», МФК «Город Столиц»<br><a class="phone"> +7 (495) <b>407-78-09</b></a><br> 
                                 a(href="#" class="button") oставить заявку
+    .fix-popup
+        .phbg
+        .ad-table
+            .middle
+                .block-form
+                    h3 Заполните заявку
+                    .inp
+                        input(type="name", placeholder="Ваше имя")                    
+                    .inp
+                        input(type="phone", placeholder="Номер телефона")
+                    .inp
+                        a(href="#" class="button") отправить заявку
+                    p *Мы не передаем персональную информацию третьим лицам
+                    a.close
+                        span
+    
+    
+    
+script(src="js/paralax.js")

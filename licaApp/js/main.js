@@ -1,35 +1,59 @@
 		$(document).ready(function() {
+            var clickneSlider = 0;
             
-            var widthDevice = $(window).width();
             
-            if (widthDevice >= 1200) {
+        $(".stick").click(function() {
+            
+            if (clickneSlider == 0) {
+             $("#slide1").fadeOut(1000);    
+             $("#slide2").fadeIn(1000);    
+              clickneSlider = 1;  
                 
-                        
-			$('#fullpage').fullpage({
-				anchors: ['start-info', 'about-info', 'reader-info', 'author-info', 'brand-info', 'social-info', 'contact-info'],
-				menu: '#menu',
-				scrollingSpeed: 1000});
-           
-            }
+            } else {
+            
+            $("#slide2").fadeOut(1000);    
+            $("#slide1").fadeIn(1000);    
+            clickneSlider = 0; 
+            
+            
+        }
+            
+            
+            
+        });  
+            
+            
+            
+      $(".regular").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });            
+      $(".regular2").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+
+            
+
+	$("nav").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+		event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+		var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+		
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({scrollTop: top}, 800);
+	});
+  
+            
             
              });       
 
-
-$(window).load(function () {
-  $('#logo').fadeIn(1000);   
-  $('#timer').delay(1000).fadeIn(1000); 
-  $('#hello').addClass('hello');
-  $('#hello-d').addClass('hello2');
-  $('#hello-scr').addClass('hello3');
-  $('#navigate1').delay(4500).fadeIn(1000);
-});
-
-
-
-$(new Image()).attr('src', 'img/home.jpg').load(function() {});
-$(new Image()).attr('src', 'img/about.jpg').load(function() {});
-$(new Image()).attr('src', 'img/author.jpg').load(function() {});
-$(new Image()).attr('src', 'img/reader.jpg').load(function() {});
-$(new Image()).attr('src', 'img/brand.jpg').load(function() {});
-$(new Image()).attr('src', 'img/social.jpg').load(function() {});
-$(new Image()).attr('src', 'img/footer.jpg').load(function() {});

@@ -11,7 +11,8 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta name="title" content="">
     <meta name="description" content="">
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/main.js"></script>
   </head>
   <body>
@@ -21,7 +22,7 @@
           <div class="middle"><a class="logo"></a></div>
         </div>
         <div class="header--nav--block">
-          <nav><a href="#">О проекте              </a><a href="#">Преимущества</a><a href="#">Планировки</a><a href="#">Галерея</a><a href="#">Оставить заявку</a></nav>
+          <nav><a href="#about">О проекте              </a><a href="#prem">Преимущества</a><a href="#plan">Планировки</a><a href="#gallery">Галерея</a><a href="#">Оставить заявку</a></nav>
         </div>
         <div class="header--phone--block">
           <div class="middle"><a class="phone"><i></i> +7 (495) <b>407-78-09</b></a></div>
@@ -29,13 +30,13 @@
       </div>
     </header>
   </body>
-  <div class="home">
+  <div class="home fullscreen background parallax">
     <div class="middle">
       <h1>Сдача 2-го корпуса<br> уже летом!</h1><a class="button">oставить заявку</a>
     </div>
   </div>
   <div class="wrap">
-    <section class="about">
+    <section id="about" class="about">
       <div class="content">
         <div class="about--info--block">
           <div class="about--info-one">
@@ -63,7 +64,7 @@
             <div class="one--block">
               <div class="ico"><img src="img/ico2.png"></div>
               <div class="title">Вас узнают</div>
-              <p>В 15-ти минутах от центра, вблизи основных транспортных магистралей</p>
+              <p>Интеллектуальная система распознавания въезжающих автомобилей</p>
             </div>
           </div>
           <!-- one block ico                -->
@@ -72,7 +73,7 @@
             <div class="one--block">
               <div class="ico"><img src="img/ico3.png"></div>
               <div class="title">Удаленное управление</div>
-              <p>В 15-ти минутах от центра, вблизи основных транспортных магистралей</p>
+              <p>Удаленный доступ к сервисам и информации с первых минут</p>
             </div>
           </div>
           <!-- one block ico                -->
@@ -81,7 +82,7 @@
             <div class="one--block">
               <div class="ico"><img src="img/ico4.png"></div>
               <div class="title">Ключи больше не нужны</div>
-              <p>В 15-ти минутах от центра, вблизи основных транспортных магистралей</p>
+              <p>Единое лобби с интеллектуальной системой распознавания</p>
             </div>
           </div>
           <!-- one block ico                -->
@@ -90,26 +91,26 @@
             <div class="one--block">
               <div class="ico"><img src="img/ico5.png"></div>
               <div class="title">Умный лифт</div>
-              <p>В 15-ти минутах от центра, вблизи основных транспортных магистралей</p>
+              <p>Определение этажа, прогноз погоды и акций – только начало пути</p>
             </div>
           </div>
           <!-- one block ico-->
         </div>
       </div>
     </section>
-    <section class="slider-one">
+    <section id="prem" class="slider-one fullscreen background parallax">
       <div class="content">
         <div class="middle">
           <h2>Преимущества</h2>
           <div class="slider--block">
-            <div class="slide--one">
+            <div id="slide1" class="slide--one">
               <div class="one">
                 <div class="one--block--pre">
                   <div class="image"><img src="img/elips1.png"></div><span>Фитнес-клуб</span>
                 </div>
               </div>
               <div class="one">
-                <div class="one--block--pre">
+                <div class="one--block--pre liner">
                   <div class="image"><img src="img/elips2.png"></div><span>Спортивные площадки</span>
                 </div>
               </div>
@@ -118,18 +119,71 @@
                   <div class="image"><img src="img/elips3.png"></div><span>Открытый WI-FI кинотеатр</span>
                 </div>
               </div>
+            </div>
+            <div id="slide2" class="slide--one">
+              <div class="one">
+                <div class="one--block--pre">
+                  <div class="image"><img src="img/elips4.png"></div><span>Внутридомовая<br> сеть WI-FI                                  </span>
+                </div>
+              </div>
+              <div class="one">
+                <div class="one--block--pre liner">
+                  <div class="image"><img src="img/elips5.png"></div><span>IZBA             </span>
+                </div>
+              </div>
+              <div class="one">
+                <div class="one--block--pre">
+                  <div class="image"><img src="img/elips6.png"></div><span>Room Service                           </span>
+                </div>
+              </div>
             </div><i id="s-left" class="stick"></i><i id="s-right" class="stick"></i>
           </div>
           <p>Для отдыха и прогулок на территории комплекса спроектирована закрытая<br> благоустроенная территория с зелеными насаждениями, детскими и спортивными<br> площадками и другими зонами отдыха.<br> <a href="#" class="button">oставить заявку</a></p>
         </div>
       </div>
     </section>
-    <section class="plan--slider">
-      <div class="content"></div>
-    </section>
-    <section class="image--slider">
-      <div class="content"></div>
-    </section>
+    <section id="plan" class="plan--slider">
+      <div class="regular slider">
+      <div>
+      <img src="img/plan-1.jpg">
+      </div>
+      <div>
+      <img src="img/plan-1.jpg">
+      </div>
+      <div>
+      <img src="img/plan-1.jpg">
+      </div>
+      <div>
+      <img src="img/plan-1.jpg">
+      </div>
+      <div>
+      <img src="img/plan-1.jpg">
+      </div>
+      <div>
+      <img src="img/plan-1.jpg">
+      </div>
+      </div></section>
+    <section id="gallery" class="image--slider">
+      <div class="regular slider">
+      <div>
+      <img src="img/image-1.jpg">
+      </div>
+      <div>
+      <img src="img/image-1.jpg">
+      </div>
+      <div>
+      <img src="img/image-1.jpg">
+      </div>
+      <div>
+      <img src="img/image-1.jpg">
+      </div>
+      <div>
+      <img src="img/image-1.jpg">
+      </div>
+      <div>
+      <img src="img/image-1.jpg">
+      </div>
+      </div></section>
     <section class="contatc">
       <div class="content">
         <div class="about--info--block">
@@ -146,4 +200,23 @@
       </div>
     </section>
   </div>
+  <div class="fix-popup">
+    <div class="phbg"></div>
+    <div class="ad-table">
+      <div class="middle">
+        <div class="block-form">
+          <h3>Заполните заявку</h3>
+          <div class="inp">
+            <input type="name" placeholder="Ваше имя">
+          </div>
+          <div class="inp">
+            <input type="phone" placeholder="Номер телефона">
+          </div>
+          <div class="inp"><a href="#" class="button">отправить заявку</a></div>
+          <p>*Мы не передаем персональную информацию третьим лицам</p><a class="close"><span></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </html>
+<script src="js/paralax.js"></script>
