@@ -15,14 +15,14 @@ html
                         a(href="#prem") Преимущества
                         a(href="#plan") Планировки
                         a(href="#gallery") Галерея
-                        a(href="#") Оставить заявку
+                        a(id="button-5") Оставить заявку
                 .header--phone--block
                     .middle
-                        a.phone <i></i> +7 (495) <b>407-78-09</b>
+                        a.phone(href="tel:+74954077809") <i></i> +7 (495) <b>407-78-09</b>
         .home.fullscreen.background.parallax
             .middle
                 h1 Сдача 2-го корпуса<br> уже летом!
-                a.button oставить заявку
+                a.button#button-1 oставить заявку
     .wrap
         section.about#about
             .content
@@ -106,7 +106,7 @@ html
                         
                         i.stick#s-left
                         i.stick#s-right
-                    p Для отдыха и прогулок на территории комплекса спроектирована закрытая<br> благоустроенная территория с зелеными насаждениями, детскими и спортивными<br> площадками и другими зонами отдыха.<br> <a href="#" class="button">oставить заявку</a>
+                    p Для отдыха и прогулок на территории комплекса спроектирована закрытая<br> благоустроенная территория с зелеными насаждениями, детскими и спортивными<br> площадками и другими зонами отдыха.<br> <a id="button-2" class="button">oставить заявку</a>
         section.plan--slider#plan
             include include/slick2.jade
         section.image--slider#gallery
@@ -121,7 +121,7 @@ html
                             article
                                 h2 Контакты
                                 p Пресненская наб., д. 8 стр. 1 ММДЦ «Москва-Сити», МФК «Город Столиц»<br><a class="phone"> +7 (495) <b>407-78-09</b></a><br> 
-                                a(href="#" class="button") oставить заявку
+                                a( id="button-3" class="button") oставить заявку
     .fix-popup
         .phbg
         .ad-table
@@ -133,7 +133,7 @@ html
                     .inp
                         input(type="phone", placeholder="Номер телефона")
                     .inp
-                        a(href="#" class="button") отправить заявку
+                        a(id="button-4" class="button") отправить заявку
                     p *Мы не передаем персональную информацию третьим лицам
                     a.close
                         span

@@ -46,7 +46,7 @@
                 asNavFor: null,
                 prevArrow: '<i data-role="none" class="slider--nav slick-prev" aria-label="Previous" tabindex="0" role="button"></i>',
                 nextArrow: '<i data-role="none" class="slider--nav slick-next" aria-label="Next" tabindex="0" role="button"></i>',
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 3000,
                 centerMode: false,
                 centerPadding: '50px',

@@ -1001,7 +1001,7 @@ header .header--phone--block a:hover {
 }
 .fix-popup {
   position: fixed;
-  display: block;
+  display: none;
   width: 100%;
   height: 100%;
   top: 0px;
