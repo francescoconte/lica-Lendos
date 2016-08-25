@@ -1,8 +1,6 @@
 @import "grundfile.less";
 
 
-
-
 a.phone {text-align: right; font-weight: 500; display: block; font-size: 16px;  float: right;
 .m-speed; margin-left: 30px;
 position: relative;
@@ -60,7 +58,7 @@ a {color: #777777; font-size: 14px; font-family: @fontL; margin: 0 11px; .m-spee
 }}
     
 .header--phone--block {float: left; height: 100%; width: 25%; display: inline-table; text-align: right;
-a.phone {text-align: right; font-weight: 500; display: block; font-size: 16px;  float: right;
+a.phone {text-align: right; font-weight: 500; display: block; font-size: 16px;  float: right; white-space: nowrap;
 .m-speed; margin-left: 30px;
 position: relative;
 b {font-family: @fontB;}
@@ -100,7 +98,9 @@ p {float: left; width: 100%; font-size: 16px; font-family: @fontL; color: #77777
 .about--table--ico--block {float: left; width: 100%; margin-top: 85px;
 .about--ico--one {height: 270px; width: 20%; border-left: solid 6px @colbg; border-right: solid 6px @colbg;
 position: relative; float: left;
-.one--block {position: absolute; display: block; width: 100%; height: 100%; border-radius: 8px; background: #fff; padding: 30px 15px;
+.one--block {position: absolute; display: block; width: 100%; height: 100%; border-radius: 8px; background: #fff; padding: 30px 15px; 
+box-shadow: 0px 7px 24px 0px rgba(222, 102, 164, 0.1);
+
 .ico {height: 125px; float: left; width: 100%; display: table;
 img {position: relative; display: table-cell; vertical-align: bottom; margin: 0 auto;padding: 24px;  .m-speed;}}   
 .title {display: inline-block; float: left; width: 100%; text-align: center; font-family: @fontB; margin-bottom: 10px;}
@@ -343,28 +343,26 @@ li {display: inline-block; width: 6px; height: 6px; background: #fff; border-rad
 .fix-popup {position: fixed; display: none; width: 100%; height: 100%; top:0px; left:0px; z-index: 99999999999999;
 .phbg{position: absolute; width: 100%; height: 100%; top:0px; left:0px; background: @coltxt; opacity: 0.35;}
 .ad-table {position: absolute; width: 100%; height: 100%; top:0px; left:0px; display: table;
-.block-form {position: relative; width: 450px; height: 450px; margin: 0 auto; background: #fff; border-radius: 15px; padding: 25px 45px; margin-bottom: -45px; text-align: center;
-h3 {color: @coltxt; font-size: 32px; font-family: @fontB; float: left; width: 100%; text-align: center; padding: 25px 0 25px;} 
-.inp {float: left; width: 100%; position: relative; margin: 15px 0}    
-input { position: relative; display: inline-block; width: 100%; float: left; font-size: 1rem; padding: 12px 42px 12px 12px; border: solid 1px #ebebeb; margin: 0px; border-radius: 5px;}
-p {float: left; width: 100%; margin-top: 15px; text-align: center;}    
-.button { display: inline-block;}
+.block-form {position: relative; display: table; width: 450px; height: 450px; margin: 0 auto; background: #fff; padding: 25px 45px; margin-bottom: -45px; text-align: center;
+.form-sl{float: left; width: 100%;}
+#form-sl1 {display: block;}
+#form-sl2 {display: none; h3 {padding-top: 45px !important;}}
+h3 {color: @coltxt; font-size: 32px; font-family: @fontB; float: left; width: 100%; text-align: center; padding: 25px 0 10px;} 
+.inp {float: left; width: 100%; position: relative; margin: 5px 0}    
+input { position: relative; display: inline-block; width: 100%; float: left; font-size: 1rem; padding: 20px; border: solid 1px #ebebeb; margin: 0px;}
+p {float: left; width: 100%; margin: 5px 0 32px; text-align: center; color: #777777;}    
+.button { display: inline-block; margin-top: 30px;}
 
-.close{position: absolute; display: block; top:-35px; right: -35px; width: 35px; height: 35px;
-span {position: absolute; display: block; width: 100%; height: 2px; top: 0px; left: 0px; .pov1; background: #fff; .m-speed;}
-span::before {content: '';  position: absolute; display: block; width: 100%; height: 2px; top: 0px; left: 0px; .pov2; background: #fff; .m-speed;} .m-speed;}       
+.close{position: absolute; display: block; top:25px; right: 15px; width: 20px; height: 20px;
+span {position: absolute; display: block; width: 100%; height: 2px; top: 0px; left: 0px; .pov1; background: #b4b4b4; .m-speed;}
+span::before {content: '';  position: absolute; display: block; width: 100%; height: 2px; top: 0px; left: 0px; .pov2; background: #b4b4b4; .m-speed;} .m-speed;}       
     
 .close:hover{
 span {background: @colfirm}
 span::before {background: @colfirm}
 }
-}
-   
-    
+}    
 }  
-    
-
-
 }
 
 
@@ -957,7 +955,7 @@ header .header--nav--block {
 }
     
 header .header--phone--block a.phone {
-    font-size: 14px;
+    font-size: 11px;
 }
     
 .about {
@@ -1146,7 +1144,7 @@ header .header--logo--block a.logo {
 .image--slider .slick-dots {display: none !important;}
 
 .contatc {
-    padding: 15px;
+    padding: 0px;
     height: auto;
     padding-top: 0px;
 }
@@ -1183,7 +1181,7 @@ header {
     background: #000;
 }
     
-
+    header .header--phone--block .phone::before {top:-1px;}
     
 }
 

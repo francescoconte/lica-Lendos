@@ -132,16 +132,24 @@ html
         .ad-table
             .middle
                 .block-form
-                    h3 Заполните заявку
-                    .inp
-                        input(type="name", placeholder="Ваше имя")                    
-                    .inp
-                        input(type="phone", placeholder="Номер телефона")
-                    .inp
-                        a(id="button-4" class="button") отправить заявку
-                    p *Мы не передаем персональную информацию третьим лицам
-                    a.close
-                        span
+                    .middle
+                        .form-sl#form-sl1
+                            h3 Заполните заявку
+                            p Наш специалист свяжется с вами в ближайшее время
+                            .inp
+                                input(type="name", placeholder="Ваше имя")                    
+                            .inp
+                                input(type="phone", placeholder="Номер телефона")
+                            .inp
+                                a(id="button-4" class="button") отправить заявку
+                            a.close
+                                span
+                        .form-sl#form-sl2
+                            img(src="img/send.png")
+                            h3 Ваша заявка принята
+                            p Наш специалист свяжется с вами в ближайшее время
+                            a.close
+                                span
     
     
     

@@ -511,6 +511,7 @@ header .header--phone--block a.phone {
   display: block;
   font-size: 16px;
   float: right;
+  white-space: nowrap;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -630,6 +631,7 @@ header .header--phone--block a:hover {
   border-radius: 8px;
   background: #fff;
   padding: 30px 15px;
+  box-shadow: 0px 7px 24px 0px rgba(222, 102, 164, 0.1);
 }
 .about .about--table--ico--block .about--ico--one .one--block .ico {
   height: 125px;
@@ -1072,14 +1074,27 @@ header .header--phone--block a:hover {
 }
 .fix-popup .ad-table .block-form {
   position: relative;
+  display: table;
   width: 450px;
   height: 450px;
   margin: 0 auto;
   background: #fff;
-  border-radius: 15px;
   padding: 25px 45px;
   margin-bottom: -45px;
   text-align: center;
+}
+.fix-popup .ad-table .block-form .form-sl {
+  float: left;
+  width: 100%;
+}
+.fix-popup .ad-table .block-form #form-sl1 {
+  display: block;
+}
+.fix-popup .ad-table .block-form #form-sl2 {
+  display: none;
+}
+.fix-popup .ad-table .block-form #form-sl2 h3 {
+  padding-top: 45px !important;
 }
 .fix-popup .ad-table .block-form h3 {
   color: #121010;
@@ -1088,13 +1103,13 @@ header .header--phone--block a:hover {
   float: left;
   width: 100%;
   text-align: center;
-  padding: 25px 0 25px;
+  padding: 25px 0 10px;
 }
 .fix-popup .ad-table .block-form .inp {
   float: left;
   width: 100%;
   position: relative;
-  margin: 15px 0;
+  margin: 5px 0;
 }
 .fix-popup .ad-table .block-form input {
   position: relative;
@@ -1102,27 +1117,28 @@ header .header--phone--block a:hover {
   width: 100%;
   float: left;
   font-size: 1rem;
-  padding: 12px 42px 12px 12px;
+  padding: 20px;
   border: solid 1px #ebebeb;
   margin: 0px;
-  border-radius: 5px;
 }
 .fix-popup .ad-table .block-form p {
   float: left;
   width: 100%;
-  margin-top: 15px;
+  margin: 5px 0 32px;
   text-align: center;
+  color: #777777;
 }
 .fix-popup .ad-table .block-form .button {
   display: inline-block;
+  margin-top: 30px;
 }
 .fix-popup .ad-table .block-form .close {
   position: absolute;
   display: block;
-  top: -35px;
-  right: -35px;
-  width: 35px;
-  height: 35px;
+  top: 25px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1144,7 +1160,7 @@ header .header--phone--block a:hover {
   -o-transform: rotate(45deg);
   /* Для Opera */
   transform: rotate(45deg);
-  background: #fff;
+  background: #b4b4b4;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1167,7 +1183,7 @@ header .header--phone--block a:hover {
   -o-transform: rotate(-90deg);
   /* Для Opera */
   transform: rotate(-90deg);
-  background: #fff;
+  background: #b4b4b4;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -1653,7 +1669,7 @@ header .header--phone--block a:hover {
     width: 100%;
   }
   header .header--phone--block a.phone {
-    font-size: 14px;
+    font-size: 11px;
   }
   .about {
     padding: 25px 0;
@@ -1806,7 +1822,7 @@ header .header--phone--block a:hover {
     display: none !important;
   }
   .contatc {
-    padding: 15px;
+    padding: 0px;
     height: auto;
     padding-top: 0px;
   }
@@ -1837,5 +1853,8 @@ header .header--phone--block a:hover {
   }
   .fix-popup .ad-table .block-form .close span::before {
     background: #000;
+  }
+  header .header--phone--block .phone::before {
+    top: -1px;
   }
 }
