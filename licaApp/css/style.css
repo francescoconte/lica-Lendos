@@ -1739,6 +1739,7 @@ header .header--phone--block a:hover {
     float: left;
     width: 100%;
     padding: 0px;
+    text-align: center;
   }
   .slider-one .slider--block {
     float: left;
@@ -1856,5 +1857,18 @@ header .header--phone--block a:hover {
   }
   header .header--phone--block .phone::before {
     top: -1px;
+  }
+  .contatc .about--info--block .about--info-one p {
+    text-align: center;
+  }
+  .contatc .about--info--block .about--info-one .phone {
+    margin-top: 25px;
+    float: none;
+    display: inline-block;
+  }
+  .contatc .about--info--block .about--info-one .button {
+    margin-top: 43px;
+    display: inline-block;
+    float: none;
   }
 }
